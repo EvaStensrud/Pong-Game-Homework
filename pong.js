@@ -7,6 +7,8 @@ var score = 0
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  x = random(0, windowWidth);
+  y = random(0, windowHeight);
 
 }
 
@@ -26,12 +28,17 @@ function draw() {
 
   // TO DO 1: Bringe den Balken dazu der Maus auf der x-Achse zu folgen. 
 
-  xBall += xSpeed;
-  ellipse(xBall, windowHeight/2, 20, 20);
+  x += xSpeed;
+  y += ySpeed;
+
+  //ellipse(xBall, windowHeight/2, 20, 20);
+  ellipse(x, y, 20, 20);
+
+
   // TO DO 2: Schaffst du es, dass sich der Ball frei bewegt?
 
-  if(xBall>windowWidth-10){
-    xSpeed *= -1;
+if(xBall>windowWidth-10){
+xSpeed *= -1;
   } 
   // TO DO 3: Lass den Ball von den Seitenrändern abprallen (windowWidth/windowHeight)
 
