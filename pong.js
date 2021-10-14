@@ -4,8 +4,10 @@ var xSpeed = (2, 7);
 var ySpeed = (-7, -2);
 var score = 0
 
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
 }
 
 function draw() {
@@ -18,7 +20,10 @@ function draw() {
   text("Score: " + score, 10, 25);
 
 
-  rect(0,windowHeight-15, 90, 15);
+  rect(mouseX,windowHeight-15, 90, 15);
+  
+
+
   // TO DO 1: Bringe den Balken dazu der Maus auf der x-Achse zu folgen. 
 
   xBall += xSpeed;
