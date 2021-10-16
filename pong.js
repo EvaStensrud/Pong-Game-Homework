@@ -41,10 +41,15 @@ if(x > windowWidth || x < 0){
 xSpeed = -xSpeed;
   } 
   if(y > windowHeight || y < 0){
-yspeed = +ySpeed;
+ySpeed = -ySpeed;
 }
   // TO DO 3: Lass den Ball von den Seitenrändern abprallen (windowWidth/windowHeight)
 
   // TO DO 4: Lass den Ball vom Balken aprallen, falls sie sich berühren
+
+  //if(ellipse isTouching rect){
+    //xSpeed = -xSpeed
+    //ySpeed = -ySpeed
+  
 
 }
