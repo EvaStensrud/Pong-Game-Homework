@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   // Background
   background(colour);
-  fill(0, 0, 255);
+  fill(255, 0, 255);
   
   // Score
   textSize(24);
