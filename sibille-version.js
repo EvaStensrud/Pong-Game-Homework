@@ -12,7 +12,7 @@ var rectHeight = 20
 var fieldWidth = 1000
 var fieldHeight = 650
 
-/* object-orientierte Schreibweise
+/* dot.notification Schreibweise
 let ball = {
   xBall: Math.floor(Math.random() * 300) + 50,
   yBall: Math.floor(Math.random() * 500) + 50,
