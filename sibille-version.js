@@ -1,11 +1,11 @@
-var xBall = Math.floor(Math.random() * 300) + 50;
+var xBall = Math.floor(Math.random() * 300) + 50; //Math.random() ist eine Funktion in JavaScript, da random() nur innerhalb von P5 funktionert. Die Variablen stehen jedoch ausserhalb des P5 Scopes
 var yBall = Math.floor(Math.random() * 500) + 50;
 var xSpeed = (4, 8);
 var ySpeed = (-8, -4);
 var score = 0
 var ballSize = 100
 var radius = ballSize/2
-var backgrColour
+var backgrColour //Variable wird an dieser Stelle deklariert(Variable existiert) und unten erst initialisiert(ihr wird erst unten ein Wert zugewiesen)
 //var colourBall
 var rectWidth = 150
 var rectHeight = 20
@@ -26,7 +26,7 @@ let ball = {
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  backgrColour = color(0, 0, 0)
+  backgrColour = color(0, 0, 0) //Variable wird hier erst initialisiert, d.h. ihr wird ein Wert zugewiesen, sie wurde oben deklariert
   //colourBall = fillStyle(0 ,0 , 0)
 }
 //Hintergrundfarbe ändert sich (Bedingung: bei Seitenkontakt wird unten aufgerufen)
